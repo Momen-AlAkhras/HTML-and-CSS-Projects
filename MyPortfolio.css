@@ -1,0 +1,120 @@
+:root {
+    --Cyan:#00ABB3;
+    --DrkGray:#3C4048;
+    --Gray:#B2B2B2;
+    --White:#EAEAEA;
+}
+.Container {
+    width: 95%;
+    margin: 0 auto;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+}
+body,html {
+    background-color:var(--Gray);
+    height: 100%;
+    width: 100%;
+}
+.Navbar {
+    margin: none;
+    padding: 20px;
+    background-color: var(--White);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 70px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+#Logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+}
+#AboutMe {
+   width: 98%;
+   height: 50%;
+   margin-top: 77px;
+}
+#AboutMe .Container {
+    width: (90%);
+    background-color: var(--Cyan);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    height: 150%;
+}
+#Name {
+    font-weight: bold;
+    font-size: 44px;
+}
+.Text {
+    font-size: 26px;
+    margin: 50px;
+}
+#image {
+    height: 400px;
+    width: 500px;
+    margin: 50px;
+}
+#About {
+    margin-top: 50px;
+    color: var(--White);
+}
+#Projects {
+    width: 98%;
+    height: 50%;
+}
+#Projects .Container {
+    width: (90%);
+    background-color: var(--DrkGray);
+    height: 170%;
+    margin-top: 186.4px;
+}
+.Headerw {
+    color: var(--White);
+    font-size: 38px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+ul a{
+    color: var(--DrkGray);
+}
+.Header {
+    border-top: solid black 3px;
+    padding-right: 500px;
+    padding-left:500px;
+    padding-top: 20px;
+}
+.SecHeader {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 70px;
+    text-align: center;
+    color: var(--White);
+}
+.Textw {
+    text-align: center;
+    color: var(--White);
+    font-size: 20px;
+    margin-left: 500px;
+    margin-top: 100px;
+    width: 50%;
+}
+
