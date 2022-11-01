@@ -376,6 +376,10 @@ font-size: 28px;
 a {
     text-decoration: none;
 }
-i {
+a i {
     text-decoration: none;
+    color: var(--White);
+}
+.Phone i {
+    color: var(--White);
 }
