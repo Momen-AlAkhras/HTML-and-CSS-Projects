@@ -1,0 +1,457 @@
+/* UNIVERSAL */
+:root {
+    --Cyan:#b9bfff;
+    --DrkGray:#3C4048;
+    --Gray:#B2B2B2;
+    --White:#EAEAEA;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: #3C4048;
+    position: fixed;
+    top: 0;
+}
+.NavLinksDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+}
+.NavLinks {
+     list-style-type: none;
+     display: flex;
+     gap: 50px;
+}
+.Logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 45%;
+}
+.Logo span {
+   font-size: 290%;
+   font-style: italic;
+   font-family: 'Nunito', sans-serif;
+}
+.Logo span a {
+    text-decoration: none;
+    color: #EAEAEA;
+}
+.NavLinks li a {
+  text-decoration: none;
+  color: #EAEAEA;
+  font-size: 20px;
+}
+.Burger {
+    display: none;
+}
+
+/* AboutMe */
+.AboutMe {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    width: 100%;
+    background-color: var(--Cyan);
+    height: 600px;
+   /* z-index: -1;                                                                 aksnkjfalfmkamnfklamffw kjlf kw */
+}
+#Name {
+   font-size: 80px;
+   color: var(--DrkGray);
+   font-family: 'Nunito', sans-serif;
+   color: #19212a;
+}
+#About {
+    font-size: 35px;
+    text-decoration: none;
+    color: #19212a;
+}
+#Resume {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--White);
+    background-color:var(--DrkGray);
+    border-radius: 20%;
+    padding: 20px;
+}
+.Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    color:  #EAEAEA;
+    /* border: solid black 1px; */
+}
+.Image {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+    height: 100%;
+    /* border: solid 1px black; */
+    overflow: hidden;
+}
+
+.Image img {
+    height: 100%;
+    width: 130%;
+}
+/* Education */
+.education {
+    padding: 100px 0;
+}
+.education h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.education .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.education .container .card {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+ border-radius: 10px;
+ overflow: hidden;
+ box-shadow: 5px 5px 10px gray;
+ 
+}
+.education .container .text{
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.education .container div {
+    width: 45%;
+}
+@media (max-width : 768px){
+    .education .container {
+        flex-direction:column;
+        gap: 20px;
+    }
+
+    .education .container div {
+        width: 80%;
+    }
+    .education .container .image {
+        height: 70%;
+    }
+}
+.education .container .image , .text{
+width: 50%;
+
+}
+/* Education */
+
+/* Certificates */
+.certificates {
+    padding-bottom:20px;
+}
+.certificates h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.certificates .certcards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+}
+.certificates .certcards .card{
+ width: 250px;
+ border-radius: 10px;
+ overflow: hidden;
+ box-shadow: 5px 5px 10px gray;
+ 
+}
+.certificates .certcards .card .text {
+    padding: 10px;
+    width: 100%;
+    
+}
+/* Certificates */
+
+/* Soft Skills */
+.skills {
+    padding: 50px 0;
+}
+.skills h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills .softskills{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 110px;
+}
+.skills .softskills:first-child {
+    margin-bottom: 60px;
+}
+.skills .softskills .card {
+    display: flex;
+    width: 280px;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 5px 5px 10px gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+.skills .softskills .card .img {
+    width: 80px;
+    
+}
+.skills .softskills .card .img i {
+    font-size: 80px;
+}
+.languages {
+    padding-bottom:20px;
+}
+.languages h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.languages .langs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 300px;
+}
+.languages .langs .card {
+    display: flex;
+    justify-content: space-evenly;
+    width: 280px;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 5px 5px 10px gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+.englishImage i {
+    font-size: 50px;
+}
+.refrences {
+    padding: 50px 0;
+}
+.refrences h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.refrences .reefs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 300px;
+}
+.refrences .reefs .card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 280px;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 5px 5px 10px gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Toxt {
+    text-align: center;
+    font-size: 25px;
+}
+.f {
+    background-color: #B2B2B2;
+    height: 73px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social {
+    font-size: 30px;
+    text-align: center;
+}
+.social a {
+    text-decoration: none;
+    color: var(--White);
+    margin: 0 10px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 480px) {
+    .NavLinksDiv {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        gap: 150px;
+    }
+    .Logo {
+        display: flex;
+        justify-content: start;
+        width: 20%;
+    }
+    .Burger {
+        display: flex;
+        color: #EAEAEA;
+        font-size: 45px;
+        width: 20%;
+        justify-content: end;
+    }
+    .Logo span {
+        font-size: 200%;
+    }
+    .AboutMe {
+        height: 400px;
+    }
+    #Name {
+        font-size:40px;
+    }
+    .Image img {
+        display: none;
+    }
+    .Image {
+        display: none;
+    }
+    #About {
+        font-size: 25px;
+    }
+    .Text {
+        width: 100%;
+        text-align: center;
+    }
+    .skills .softskills{
+        gap: 70px;
+    }
+    .education .container .card {
+        flex-direction: column;
+    }
+    .education .container .text{
+        width: 100%;
+        padding-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .education .container .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    #Orange {
+        width: 180px;
+        align-self: center;
+        margin-left: -20px;
+    }
+    .languages .card {
+        display: flex;
+        justify-content: space-evenly;
+        width: 280px;
+        gap: 25px;
+        align-items: center;
+        box-shadow: 5px 5px 10px gray;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .languages .langs{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .refrences .reefs{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .f {
+        flex-direction: column;
+        margin-top: 50px;
+        background-color: #B2B2B2;
+        height: 150px;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .NavLinksDiv {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        gap: 210px;
+    }
+    .Logo {
+        display: flex;
+        justify-content: start;
+        width: 20%;
+    }
+    .Burger {
+        display: flex;
+        color: #EAEAEA;
+        font-size: 45px;
+        width: 20%;
+        justify-content: end;
+    }
+    .Logo span {
+        font-size: 200%;
+    }
+    .skills .softskills{
+        gap: 70px;
+    }
+    .education .container .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .education .container .text{
+        padding-top: 30px;
+        font-size: 25px;
+        text-align: center;
+    }
+    #Orange {
+        width: 300px;
+        align-self: center;
+    }
+    .languages .langs{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    .refrences .reefs{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+}
